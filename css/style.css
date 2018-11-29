@@ -4,7 +4,7 @@
 }
 
 header {
-  background: white;
+  background: black;
   background-size: cover;
 }
 
@@ -15,4 +15,22 @@ a {
 
 h1 {
   font-size: 18px;
+}
+
+.col-sm-1 {
+  padding: 10px 10px 10px 10px;
+}
+
+.col-sm-2 {
+  color: white;
+  padding: 25px 10px 10px 10px;
+}
+
+.col-sm-6 {
+  padding: 52px 10px 10px 10px;
+  margin: auto;
+  text-align: center;
+}
+#navigation {
+  padding: 52px 10px 10px 30px;
 }
