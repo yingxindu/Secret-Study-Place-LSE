@@ -9,6 +9,7 @@ html {
 header {
   background: black;
   background-size: cover;
+  font-family: 'Chewy';
 }
 
 .topnav {
@@ -35,15 +36,25 @@ header {
   color: black;
 }
 
+body {
+  font-family: 'Averia Libre';
+}
+
 h1 {
   font-size: 20px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
-
 }
+
+h3 {
+  font-size: 35px;
+  color: black;
+  margin-bottom: 50px;
+}
+
 .col-sm-1 {
   padding: 10px 10px 10px 10px;
 }
@@ -62,36 +73,42 @@ h2 {
   padding: 52px 10px 10px 30px;
 }
 
-.bg-image {
-  filter: blur(5px);
-  height: 100%;
+
+.bg-image img {
+  filter: blur(4px);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px 130px;
   float: none;
   position: relative;
-  opacity: 1;
+  opacity: 2;
   z-index: 2;
   transition:
   opacity: 500ms;
   ease-in-out: 0s;
-  width: 50%;
-}
+  width: 80%;
+
+  }
 
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
   top: 50%;
   left: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
-  padding: 20px;
+  width: 65%;
+  margin: 100px 0;
+  padding: 10px 5px;
   text-align: center;
+}
+
+.bg-text p {
+  font-size: 20px;
 }
 
 .fa {
@@ -125,4 +142,226 @@ h2 {
 .fa-pinterest {
   background: #cb2027;
   color: white;
+}
+
+
+
+
+
+
+
+  /* Aboutus page */
+.aboutus {
+  font-family: 'Averia Libre';
+  text-align: center;
+}
+
+ h6 {
+  font-size: 35px;
+  color: white;
+  margin-top: 50px;
+  background-color: black;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.aboutus p {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 35px;
+  color: white;
+  margin-top: 50px;
+  background-color: black;
+  width: 30%;
+  margin-left: 35%;
+  }
+
+  /* About the team pictures */
+  * {
+      box-sizing: border-box;
+  }
+
+  .column-aboutus {
+      float:left;
+      width: 300px;
+      padding: 2ch;
+      margin: 30px 30px 10px 75px;
+    }
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .container-us {
+    position: relative;
+    width: 50%;
+  }
+
+  .image-us {
+    padding-left: 30px;
+    display:flex;
+    width: 200%;
+    height: auto;
+  }
+
+  .overlay-us {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #A9A9A9;
+    overflow: hidden;
+    width: 200%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    opacity: 3;
+  }
+
+  .container-us:hover .overlay-us {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Acknowledgements */
+h5 {
+  font-size: 35px;
+  color: white;
+  margin-top: 50px;
+  background-color: black;
+  width: 30%;
+  margin-left: 35%;
+}
+
+  hr {
+      -moz-border-bottom-colors: none;
+      -moz-border-image: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-color: #000000;
+      border-style: solid none;
+      border-width: 7px 0;
+      margin: 60px 0px;
+  }
+
+/* cfglogo */
+* {box-sizing: border-box;}
+
+.container {
+  position:relative;
+  width: 50%;
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 1px;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 13px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* form */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], textarea {
+    width: 60%;
+    padding: 12px;
+    border-left: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 500px;
+    resize: vertical;
+}
+
+
+
+label {
+    padding: 12px 0 12px 400px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    width: 29%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 80%;
+    margin-right: 20%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container-form {
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 200px;
+
+}
+
+/* Clear floats after the columns */
+.row-form:after {
+    content: "";
+    display: table;
+    clear: both;
 }
