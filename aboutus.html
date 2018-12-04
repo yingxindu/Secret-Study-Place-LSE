@@ -5,9 +5,9 @@
   <link href='css/bootstrap.min.css' rel='stylesheet'/>
   <link href='css/style.css' rel='stylesheet'></link>
   <meta name='viewport' content='width=device-width', initial-scale=1.0 />
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <link href="js/scripts.js"/>
+  <link href="js/scripts.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
@@ -64,6 +64,16 @@
     <br>
     Let more people know about it!</p>
 
+  <button>Recommend a Place</button>
+  <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".myDiv").show();
+        });
+    });
+    </script>
+
+<div class="myDiv" style="display:none">
 
 <div class="container-form">
   <div class="row-form">
@@ -90,12 +100,14 @@
     </div>
 
   <div class="row-form">
-      <input type="submit" value="Reccomend this place">
+      <input type="submit" value="Recommend this place">
   </div>
 
 </form>
 
 </div>
+</div>
+
 
 <hr>
 <!-- about team -->

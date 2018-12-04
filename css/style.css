@@ -305,6 +305,15 @@ h5 {
 }
 
 /* form */
+button {
+  background-color: #C54444;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 6px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -336,7 +345,7 @@ input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px;
-    width: 29%;
+    width: 40%;
     margin-top: 6px;
     margin-bottom: 16px;
     margin-left: 80%;
