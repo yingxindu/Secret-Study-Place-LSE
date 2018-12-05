@@ -9,7 +9,7 @@ html {
 header {
   background: black;
   background-size: cover;
-  font-family: 'Chewy';
+  font-family: 'Ubuntu';
 }
 
 .topnav {
@@ -37,7 +37,7 @@ header {
 }
 
 body {
-  font-family: 'Averia Libre';
+  font-family: 'Ubuntu';
 }
 
 h1 {
@@ -154,7 +154,7 @@ h3 {
 
   /* Aboutus page */
 .aboutus {
-  font-family: 'Averia Libre';
+  font-family: 'Ubuntu';
   text-align: center;
 }
 
