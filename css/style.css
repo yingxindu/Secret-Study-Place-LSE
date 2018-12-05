@@ -342,7 +342,7 @@ label {
 }
 
 
-input[type=submit] {
+#recommend {
     background-color: #4CAF50;
     color: white;
     padding: 12px;
@@ -358,7 +358,7 @@ input[type=submit] {
 
 }
 
-input[type=submit]:hover {
+#recommend:hover {
     background-color: #45a049;
 }
 
