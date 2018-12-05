@@ -75,28 +75,30 @@ h3 {
 
 
 .bg-image img {
-  filter: blur(4px);
+  filter: blur(6px);
   display: block;
-  margin: 30px 130px;
+  margin: 30px 0;
   float: none;
   position: relative;
-  opacity: 2;
+  opacity: 3;
   z-index: 2;
-  transition:
-  opacity: 500ms;
-  ease-in-out: 0s;
-  width: 80%;
+  width: 100%;
 
   }
 
+.bg-text h3 {
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
@@ -199,41 +201,40 @@ h4 {
   .container-us {
     position: relative;
     width: 50%;
+    max-width: 300px;
   }
 
   .image-us {
     padding-left: 30px;
-    display:flex;
+    display:block;
     width: 200%;
-    height: auto;
+    height: 100%;
   }
 
   .overlay-us {
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #A9A9A9;
-    overflow: hidden;
-    width: 200%;
-    height: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-    opacity: 3;
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5); /* Black see-through */
+      color: #f1f1f1;
+      width: 180%;
+      transition: .5s ease;
+      opacity:0;
+      color: white;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
   }
 
   .container-us:hover .overlay-us {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
   }
 
   .text {
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
