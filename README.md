@@ -1,1 +1,0 @@
-# Secret Study Place@LSE
